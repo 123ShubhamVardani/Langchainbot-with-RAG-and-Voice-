@@ -1,4 +1,6 @@
 # 💬 LangChain Chatbot with RAG & Voice  
+![Chatbot Screenshot](assets/chatbot_screenshot.png)
+
 
 🚀 **An advanced AI-powered chatbot** built with [LangChain](https://www.langchain.com/), [Groq LLMs](https://groq.com/), Hugging Face embeddings, Google Gemini, and voice capabilities — featuring **Retrieval-Augmented Generation (RAG)**, **Web Search**, **voice input/output**, and **a sleek modern UI**.
 
