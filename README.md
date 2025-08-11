@@ -1,97 +1,121 @@
+# 💬 LangChain Chatbot with RAG & Voice  
 
-# 🧠 LangChain RAG Chatbot with Voice (Part 2)
+🚀 **An advanced AI-powered chatbot** built with [LangChain](https://www.langchain.com/), [Groq LLMs](https://groq.com/), Hugging Face embeddings, Google Gemini, and voice capabilities — featuring **Retrieval-Augmented Generation (RAG)**, **Web Search**, **voice input/output**, and **a sleek modern UI**.
 
-A conversational AI assistant powered by:
-- **LangChain** + **Groq** models (Auto/manual fallback)
-- **RAG** (Retrieval-Augmented Generation) with FAISS
-- **Web Search** using SerpAPI
-- **Voice Input** & **Text-to-Speech** with Google APIs
+[![Live Demo - Streamlit](https://img.shields.io/badge/Live%20Demo-Streamlit-brightgreen?logo=streamlit)](https://jrf4c9x7689jay35f2bx4v.streamlit.app/)  
+[![GitHub Stars](https://img.shields.io/github/stars/123ShubhamVardani/langchain-rag-voice-chatbot?style=social)](https://github.com/123ShubhamVardani/langchain-rag-voice-chatbot)
 
----
-
-## 🚀 Features
-
-✅ Multi-model fallback using Groq LLMs  
-✅ RAG-based document Q&A (PDF, DOCX, TXT, CSV)  
-✅ Voice input via mic and audio playback  
-✅ Web search integration using SerpAPI  
-✅ Chat history logging and download support  
-✅ Responsive UI with avatars and theme styling
+![Chatbot Demo](assets/demo_screenshot.png)
 
 ---
 
-## 🧰 Tech Stack
+## ✨ Features  
 
-- `LangChain`, `Groq`, `OpenAI`, `FAISS`
-- `Streamlit` for UI
-- `gTTS`, `speech_recognition` for audio
-- `SerpAPI` for external web search
-- `Python 3.10+`
+✅ **Multiple AI Models with Auto/Manual Selection**  
+- **Groq LLaMA 3.3 70B Versatile** (Fast & high quality)  
+- **Groq LLaMA 3.1 8B Instant** (Ultra-fast)  
+- **Google Gemini 1.5 Pro**  
+- **Hugging Face Qwen/Qwen3-32B**  
+
+✅ **Document Q&A with RAG**  
+- Upload PDF, DOCX, TXT, or CSV files.  
+- Extracts, chunks, and indexes text with **Hugging Face embeddings** for contextual answers.  
+
+✅ **Web Search Integration**  
+- Uses **SerpAPI** to fetch live information when enabled.  
+
+✅ **Voice Input & Output**  
+- 🎤 Speak your question.  
+- 🔊 Hear AI's response with text-to-speech.  
+
+✅ **Beautiful Chat UI**  
+- Modern dark theme.  
+- Custom avatars for user & bot.  
+- Chat bubble animations.  
+
+✅ **Chat Log Download**  
+- Save the entire conversation for reference.  
 
 ---
 
-## 🛠️ Setup Instructions
+## 🖥️ Tech Stack  
 
-### 1. 📦 Clone the Repo
+| Layer             | Technology |
+|-------------------|------------|
+| **Frontend/UI**   | Streamlit |
+| **LLMs**          | Groq, Gemini, Hugging Face |
+| **RAG**           | FAISS Vector Store + Hugging Face embeddings |
+| **Web Search**    | SerpAPI |
+| **Voice**         | SpeechRecognition + gTTS |
+| **Chunking**      | RecursiveCharacterTextSplitter |
+
+---
+
+## 📸 Screenshots  
+
+### Chatbot Interface  
+![Chat UI](assets/demo_screenshot.png)
+
+---
+
+## ⚡ Quick Start  
+
+### 1️⃣ Clone the repository  
 ```bash
-git clone https://github.com/your-username/langchain-rag-voice-chatbot.git
+git clone https://github.com/123ShubhamVardani/langchain-rag-voice-chatbot.git
 cd langchain-rag-voice-chatbot
 ```
 
-### 2. 🧪 Create Virtual Environment
+### 2️⃣ Create a virtual environment  
 ```bash
-uv venv
-source .venv/bin/activate      # On Windows: .venv\Scripts\activate
+python -m venv .venv
+source .venv/bin/activate  # On Linux/Mac
+.venv\Scripts\activate     # On Windows
 ```
 
-### 3. 📥 Install Dependencies
+### 3️⃣ Install dependencies  
 ```bash
-uv pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
-### 4. 🔐 Setup Environment Variables
-Create a `.env` file:
+### 4️⃣ Add API keys  
+Create a `.env` file in the root directory:  
 ```env
 GROQ_API_KEY=your_groq_api_key
-OPENAI_API_KEY=your_openai_api_key
-SERPAPI_API_KEY=your_serpapi_key
+SERPAPI_API_KEY=your_serpapi_api_key
+GOOGLE_API_KEY=your_google_api_key
+HUGGINGFACEHUB_API_TOKEN=your_huggingface_api_token
 ```
-> 🔐 Never commit your actual `.env` file to GitHub. Use `.env.example` for sharing structure.
 
-### 5. 🧠 Run the App
+### 5️⃣ Run locally  
 ```bash
 streamlit run app.py
 ```
 
 ---
 
-## 📁 File Structure
-```
-├── app.py               # Main Streamlit app
-├── main.py              # Entry script (optional)
-├── requirements.txt     # Full dependency list
-├── pyproject.toml       # Project metadata
-├── .env.example         # API key placeholders
-├── .gitignore           # Ignores env and chat logs
-├── README.md            # You are here
-```
+## ☁ Deploy on Streamlit Cloud  
+
+**Live Demo:** [Click Here to Try 🚀](https://jrf4c9x7689jay35f2bx4v.streamlit.app/)  
+
+1. Push your repo to GitHub.  
+2. Go to [Streamlit Cloud](https://share.streamlit.io/) → **New app** → Connect your repo.  
+3. Set environment variables in **Secrets** tab.  
+4. Deploy 🚀  
 
 ---
 
-## 🌐 Deployment
-✅ The app is fully ready for [Streamlit Cloud](https://streamlit.io/cloud). Just push to GitHub and connect it to your Streamlit Cloud account.
+## 📜 License  
+This project is under a **Custom License**:  
+- **No modifications or commercial use** allowed without the author's permission.  
 
 ---
 
-## 👤 Author
+## 👨‍💻 Author  
 **Shubham Vardani**  
-🔗 [GitHub](https://github.com/ShubhamVardani) ・ [LinkedIn](https://linkedin.com/in/shubhamvardani) ・ [Email](mailto:shubhamvardani@gmail.com)
+📧 [shub.vardani@gmail.com](mailto:shub.vardani@gmail.com)  
+🌐 [LinkedIn](https://www.linkedin.com/in/shubham-vardani-325428174) | [GitHub](https://github.com/123ShubhamVardani)
 
 ---
 
-## 📌 Next Phase (Part 3)
-- Voice Assistant interface
-- QR-based public platform access
-- Deployment to multiple platforms
-
-Stay tuned for more! 🚀
+⭐ If you like this project, consider giving it a **star** on GitHub!
