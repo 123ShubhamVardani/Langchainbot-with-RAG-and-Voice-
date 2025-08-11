@@ -7,7 +7,7 @@ from datetime import datetime
 from langchain.agents import initialize_agent, Tool
 from langchain.agents.agent_types import AgentType
 from langchain_groq import ChatGroq
-from langchain_community.chat_models import ChatGoogleGenerativeAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_community.utilities import SerpAPIWrapper
 from langchain_community.document_loaders import PyPDFLoader, TextLoader, Docx2txtLoader, CSVLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -216,3 +216,4 @@ footer {visibility: hidden;}
 </style>
 <div class="custom-footer">Created by Shubham Vardani <img src="https://avatars.githubusercontent.com/u/104264016?v=4"></div>
 """, unsafe_allow_html=True)
+
