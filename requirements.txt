@@ -14,4 +14,3 @@ speechrecognition
 sentence-transformers>=2.2.2
 langchain-embeddings-huggingface
 git+https://github.com/langchain-ai/langchain-google-genai.git
-
