@@ -13,4 +13,5 @@ pypdf
 speechrecognition
 sentence-transformers>=2.2.2
 langchain-embeddings-huggingface
-langchain-google-genai
+git+https://github.com/langchain-ai/langchain-google-genai.git
+
